@@ -60,7 +60,6 @@ model PersonalChatParticipant {
   session     PersonalChatSession   @relation(fields: [sessionId], references: [id])
   sessionId   Int
 
-  @@unique([customerId, sessionId])
   @@map("personalChatParticipant")
 }
 
